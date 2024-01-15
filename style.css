@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 1px dashed red;
+}
+body {
+    font-family: sans-serif;
+}
+#explorer
+{
+    display: flex;
+    height: calc(100vh - 90px) ;
+    /* height impostata cosi perche abbiamo dato altezza che prende tutta la view port meno l' ipotetica barra del footer  */
+}
+/* inizio stilizzazione main  */
+#main
+{
+    background-color: #141922;
+    width:calc(100vw - 230px) ;
+    overflow-y: auto;
+    /* comando inserito per dire al main di scrollare quando ne ha bisogno e stiamo parlando dell' asse delle y  */
+    padding-top:90px  ; 
+    padding-left: 20px ;
+    padding-right: 20px ;
+
+    
+}
+#banner
+{
+    display: flex;
+    justify-content: end;
+    position: fixed;
+    width:calc(100% - 230px);
+    height: 90px;
+    align-items: center;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    color: #080b127d;
+}
+#banner a
+{
+    color: white;
+    text-decoration: none;
+    font-size: 10px;
+    padding: 15px 40px 15px;
+    border: 1px solid white;
+    border-radius: 30px;
+    font-weight:bold ;
+
+
+}
+.list.main
+{
+    color: #7D7F84;
+    margin-bottom: 16px;
+    
+}
+.list.main ul
+{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding: 22px;
+}
+/* fine stilizzazione main  */
+/* inizio stilizzazione barra laterale  */
+#barra_laterale
+{
+    background-color: greenyellow;
+    /* test  */
+    height: 100%;
+    /* misura di test inserita inizialmente  */
+    width: 230px;
+}
+/* fine stilizzazione barra laterale */
+/* inizio stilizzazione footer */
+footer
+{
+    background-color: blueviolet;
+    /* test  */
+    height: 90px;
+}
+
+/* fine stilizzazione footer */
