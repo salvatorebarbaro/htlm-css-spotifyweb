@@ -127,8 +127,9 @@ body {
 /* inizio stilizzazione barra laterale  */
 #barra_laterale
 {
-    background-color: black;
+    overflow-y: auto;
     /* test  */
+    background-color: black;
     height: 100%;
     /* misura di test inserita inizialmente  */
     width: 230px;
@@ -192,9 +193,11 @@ body {
 }
 #container_fix_part .fa-solid
 {font-size: 37px;}
+
 .container.playlist ul
 {
     margin-bottom: 0;
+    
 }
 .container.playlist ul li
 {
@@ -209,12 +212,16 @@ body {
 }
 #aside_bottom_head
 {
-    color:#7D7F84;
     font-size: 12px;
     display: flex;
     align-items: center;
     margin-bottom: 12px;
     gap: 10px;
+}
+#aside_bottom_head a
+{
+    text-decoration: none;
+    color: #7D7F84;
 }
 .container.aside_bottom hr
 {
@@ -244,9 +251,56 @@ body {
 /* inizio stilizzazione footer */
 footer
 {
-    background-color: blueviolet;
+    background-color: #282828;
     /* test  */
     height: 90px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px 0 10px;
+}
+.container.footer.first
+{
+    display: flex;
+    width: 210px;
+    justify-content: space-between;
+}
+/* abbiamo dato max misura al container cosi da limitare immagine idem spiegazione per comando subito sotto */
+#container_album_footer
+{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+#img_footer_song
+{
+    max-width: 42px;
+}
+#img_footer_song img
+{
+    width: 100%;
+}
+#text_footer_song
+{
+    color: white;
+    font-size: 12px;
+
+}
+#text_footer_song div:nth-of-type(1)
+{
+    margin-bottom: 5px;
+}
+#text_footer_song div:nth-of-type(2)
+{
+    color: #7D7F84;
+}
+#container_icon_song
+{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    color:#7D7F84 ;
 }
 
 /* fine stilizzazione footer */
