@@ -127,7 +127,7 @@ body {
 /* inizio stilizzazione barra laterale  */
 #barra_laterale
 {
-    background-color: greenyellow;
+    background-color: black;
     /* test  */
     height: 100%;
     /* misura di test inserita inizialmente  */
@@ -149,29 +149,59 @@ body {
     max-width: 130px;
     margin-bottom: 24px;
 }
-.container.element
-{
-    display: flex;
-}
-#container_elements ul
+.container.elements ul
 {
     list-style-type: none;
     margin-bottom: 24px;
 
 }
-#container_elements li
+.container.elements li
 {
     padding: 7px 0 7px 0;
 
 }
-#container_elements li a
+.container.elements li a
 {
     display: flex;
     gap: 10px;
+    text-decoration: none;
+    color: white;
 }
-#container_elements li a img
+.container.elements li a img
 {
     width: 20px;
+}
+.container.playlist
+{
+    overflow-y: auto;
+}
+.container.playlist h3
+{
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 14px;
+}
+#container_fix_part
+{
+    display:flex ;
+    align-items: center;
+    gap: 10px;
+    color: #7D7F84;
+    margin-bottom: 22px;
+}
+#container_fix_part .fa-solid
+{font-size: 37px;}
+.container.playlist ul
+{
+    margin-bottom: 0;
+}
+.container.playlist ul li
+{
+    padding: 0;
+    margin-bottom: 25px;
+    color: #7D7F84;
+    font-size: 12px;
 }
 /* fine stilizzazione barra laterale */
 /* inizio stilizzazione footer */
