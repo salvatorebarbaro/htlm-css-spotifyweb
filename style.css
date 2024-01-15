@@ -37,7 +37,7 @@ body {
     top: 0;
     right: 0;
     padding: 20px;
-    color: #080b127d;
+    background-color: rgba(0, 0, 0, 0.4);
 }
 #banner a
 {
@@ -81,10 +81,16 @@ body {
 .container_bottom_row
 {
     display: flex;
+    gap: 16px;
+}
+.container_album
+{
+    width: calc(100% / 6 - 16px / 6 * 5);
+    /* postilla per ricordarlo a me stesso da usare sempre al container e non alle immagini  */
 }
 .album
 {
-    width: calc(100% / 6 - 16px / 6 * 5);
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -93,6 +99,13 @@ body {
 {
     
     margin-bottom: 20px;
+}
+#text
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 .album #cover img
 {
@@ -119,6 +132,46 @@ body {
     height: 100%;
     /* misura di test inserita inizialmente  */
     width: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.container.aside_head
+{
+    display: flex;
+    flex-direction: column;
+
+}
+.container.aside_head #logo
+{
+    max-width: 130px;
+    margin-bottom: 24px;
+}
+.container.element
+{
+    display: flex;
+}
+#container_elements ul
+{
+    list-style-type: none;
+    margin-bottom: 24px;
+
+}
+#container_elements li
+{
+    padding: 7px 0 7px 0;
+
+}
+#container_elements li a
+{
+    display: flex;
+    gap: 10px;
+}
+#container_elements li a img
+{
+    width: 20px;
 }
 /* fine stilizzazione barra laterale */
 /* inizio stilizzazione footer */
