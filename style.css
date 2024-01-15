@@ -203,6 +203,43 @@ body {
     color: #7D7F84;
     font-size: 12px;
 }
+.container.aside_bottom
+{
+
+}
+#aside_bottom_head
+{
+    color:#7D7F84;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    gap: 10px;
+}
+.container.aside_bottom hr
+{
+    max-width: 190px;
+    margin-bottom: 14px;
+}
+#aside_bottom_person
+{
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+#aside_bottom_person .fa-regular
+{
+    background-color: #7D7F84;
+    font-size: 25px;
+    border-radius: 30px;
+}  
+#aside_bottom_person span
+{
+    font-size: 12px;
+}
+
 /* fine stilizzazione barra laterale */
 /* inizio stilizzazione footer */
 footer
