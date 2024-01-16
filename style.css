@@ -312,7 +312,7 @@ footer
 {
     display: flex;
     gap: 12px;
-    max-width: 210px;
+    width: 210px;
     color: white;
     font-size: 12px;
     align-items: center;
@@ -360,7 +360,7 @@ footer
 #volume
 {
     display: flex;
-    width:118px;
+    width: 100%;
     height: 4px;
     background-color:#5B5B5B;
     border-radius: 2px;
@@ -373,3 +373,57 @@ footer
 }
 
 /* fine stilizzazione footer */
+/* inizio stilizzazione per diversi dispositivi  */
+/* inizio stilizzazione per schermi medium  */
+@media screen and (max-device-width:992px )
+{
+    .container_bottom_row 
+    {
+        flex-wrap: wrap;
+    }
+    .container_album
+    {
+        width:calc(100% / 4 - 16px / 4 * 3);
+    }
+
+}
+/* fine stilizzazione per schermi medium  */
+/* inizio stilizzazione per schermi small */
+@media screen and (max-device-width:768px )
+{
+    /* stilizzazione main  */
+    .list.main ul
+    {
+        flex-wrap: wrap;
+    }
+    .container_bottom_row 
+    {
+        flex-wrap: wrap;
+    }
+    .container_album
+    {
+        width:calc(100% / 2 - 16px / 2 * 1);
+    }
+    /* fine stilizzazione main  */
+}
+/* fine stilizzazione per schermi small  */
+/* inizio stilizzazione per schermi extra small  */
+@media screen and (max-device-width:576px )
+{
+    /* stilizzazione main  */
+    .list.main ul
+    {
+        flex-wrap: wrap;
+    }
+    .container_bottom_row 
+    {
+        flex-wrap: wrap;
+    }
+    .container_album
+    {
+        width:calc(100% / 2 - 16px / 2 * 1);
+    }
+    /* fine stilizzazione main  */
+}
+/* fine stilizzazione per schermi extra small  */
+
